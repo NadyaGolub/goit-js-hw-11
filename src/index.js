@@ -38,7 +38,7 @@ function onSearch(event) {
       if (totalImg === data.totalHits) {
         hideBtn();
       } 
-      return (refs.gallery.innerHTML = markup(data.hits));
+      return (refs.gallery.innerHTML = markupFile(data.hits));
     })
     .catch(err => {
       error(err);
