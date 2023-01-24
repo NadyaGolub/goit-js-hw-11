@@ -1,2 +1,15 @@
 @import './common';
 @import './example';
+@import "./container_form";
+@import "./gallery";
+@import "./button";
+
+
+
+body {
+    font-family: sans-serif;
+    font-style: normal;
+    padding: 25px;
+    background: linear-gradient(138.13deg, #2e54c5 25.87%, #e4de24 100%);
+    text-align: center;
+}

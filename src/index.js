@@ -23,6 +23,9 @@ function onSearch(event) {
       totalImg = 0;
       totalImg += data.hits.length;
 
+      if (value === '') {
+        return Notiflix.Notify.failure('Enter your search query, please');
+      }
 
       if (data.hits.length === 0) {
         hideBtn();
@@ -52,6 +55,8 @@ function loadMore() {
   return fetchImage(value, page)
     .then(data => {
       totalImg += data.hits.length; 
+
+    
 
       if (totalImg === data.totalHits) {
         hideBtn();
