@@ -63,7 +63,7 @@ function loadMore() {
         Notiflix.Notify.info(`You have got all avaiable images.`);
       } 
 
-      return refs.gallery.insertAdjacentHTML('beforeend', markup(data.hits));
+      return refs.gallery.insertAdjacentHTML('beforeend', markupFile(data.hits));
     })
     .catch(err => {
       error(err);
